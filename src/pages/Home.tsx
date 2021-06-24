@@ -21,7 +21,7 @@ export function Home() {
       await signInWithGoogle()
     }
 
-    history.push('/room/new')
+    history.push('/rooms/new')
   }
 
   async function handleJoinRoom(e: FormEvent) {
@@ -38,7 +38,12 @@ export function Home() {
       return
     }
 
-    history.push(`/room/${roomCode}`)
+    if (roomRef.val().endedAt) {
+      alert('Room already closed.')
+      return
+    }
+
+    history.push(`/rooms/${roomCode}`)
   }
   
   return (
