@@ -1,6 +1,6 @@
 <div align="center">
   <img align="center" src="./public/logo.png" alt="letmeask">
-  <h1 align="center">Q&A App</h1>
+  <h1 align="center">The best Q&A App for streams 🖥</h1>
   <hr />
 </div>
 
